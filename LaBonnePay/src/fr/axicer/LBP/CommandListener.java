@@ -1,5 +1,6 @@
 package fr.axicer.LBP;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -15,6 +16,7 @@ public class CommandListener implements Listener{
 	
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void CommandPreProcess(PlayerCommandPreprocessEvent ev){
+		Player p = ev.getPlayer();
 		
 	}
 }
